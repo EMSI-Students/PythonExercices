@@ -1,0 +1,14 @@
+cpt=0
+total=0
+while True:
+    x=int(input("entrer un nombre"))
+    if x==0 and cpt==0:
+        print("erreur")
+        break
+    elif x==0:
+        total=total/cpt
+        print("la moyenne est : ",total)
+        break
+    else:
+        total=total+x
+        cpt=cpt+1
