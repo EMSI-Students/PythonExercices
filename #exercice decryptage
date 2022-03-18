@@ -1,0 +1,17 @@
+a=input("entrer ce que vous voulez decrypter: ")
+y=""
+i=0
+while i<len(a):
+   if(a[i]=="a"):
+       y=y+"x"
+       i=i+1
+   elif(a[i]=="b"):
+       y=y+"y"
+       i=i+1
+   elif(a[i]=="c"):
+       y=y+"z"
+       i=i+1
+   else:
+       y=y+chr(ord(a[i])-3)
+       i=i+1
+print(y)
