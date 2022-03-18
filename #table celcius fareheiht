@@ -1,0 +1,7 @@
+Cel=32
+Far=0
+print("Farenheit   Celicius")
+while Far<101:
+     print(Far,"            ",Cel)
+     Cel+=18
+     Far+=10
