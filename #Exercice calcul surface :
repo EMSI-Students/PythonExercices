@@ -1,0 +1,3 @@
+L=float(input("entrer longeur: "))
+l=float(input("entrer largeur: "))
+print(L*l,"est la longeur")
