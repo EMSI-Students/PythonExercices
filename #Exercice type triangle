@@ -1,0 +1,8 @@
+x=float(input("entrer la taille du premier coté: "))
+y=float(input("entrer la taille du deuxieme coté: "))
+z=float(input("entrer la taille du troisieme coté: "))
+if x==y and x==z and y==z:
+    print("ceci est un triangle equilateral")
+elif x==y or x==z or y==z:
+    print("ceci est un triangle isocele")
+else : print("ceci est un triangle scalene")
