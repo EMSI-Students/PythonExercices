@@ -1,0 +1,8 @@
+Tabrep=[]
+while True:
+    x=input("entrer ce que vous voulez: ")
+    if x!="0" and x not in Tabrep:
+        Tabrep.append(x)
+    elif x=="0":
+        break
+print(Tabrep)
