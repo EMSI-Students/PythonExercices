@@ -1,0 +1,17 @@
+a=input("entrer le nom a crypter: ")
+y=""
+i=0
+while i<len(a):
+   if(a[i]=="x"):
+       y=y+"a"
+       i=i+1
+   elif(a[i]=="y"):
+       y=y+"b"
+       i=i+1
+   elif(a[i]=="z"):
+       y=y+"c"
+       i=i+1
+   else:
+       y=y+chr(ord(a[i])+3)
+       i=i+1
+print(y)
