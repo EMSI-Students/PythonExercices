@@ -1,0 +1,8 @@
+x=int(input("entrer nombre "))
+y=[]
+while x!=0:
+    y.append(str(x%2))
+    x=x//2
+list.reverse(y)
+for i in range(len(y)):
+    print(y[i], end="")
