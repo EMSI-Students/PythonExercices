@@ -1,0 +1,16 @@
+tabpos=[]
+tabneg=[]
+tabzer=[]
+while True:
+    y=input("entrer votre nombre")
+    if y=="":
+        break
+    elif int(y)>0:
+        tabpos.append(y)
+    elif int(y)<0:
+        tabneg.append(y)
+    elif int(y)==0:
+        tabzer.append(y)
+tabzer.extend(tabpos)
+tabneg.extend(tabzer)
+print(tabneg)
