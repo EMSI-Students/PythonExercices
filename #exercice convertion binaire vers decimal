@@ -1,0 +1,10 @@
+x=str(input("entrer votre nombre binaire"))
+y=0
+cpt=0
+while cpt<len(x):
+    if x[cpt]=="1":
+        y=y+(2**cpt)
+        cpt=cpt+1
+    else:
+        cpt=cpt+1
+print(y)
