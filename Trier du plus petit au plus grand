@@ -1,0 +1,27 @@
+pos = []
+neg = []
+null = []
+tab = []
+ordonne = []
+a = input("entrer un nombre")
+while a != "":
+    tab.append(a)
+    a = input("entrer un nombre")
+    
+
+for nbr in range(len(tab)):
+    if tab[nbr]==0:
+        null[nbr] = tab[nbr]
+    elif tab[nbr] > 0:
+        pos[nbr]=tab[nbr]
+    elif tab[nbr] < 0:
+        neg[nbr]=tab[nbr]
+
+ordonne.extend(neg)
+ordonne.extend(null)
+ordonne.extend(pos)
+
+for nbr in ordonne:
+    print(nbr)
+
+
