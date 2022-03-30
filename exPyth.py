@@ -67,3 +67,20 @@ def DecToBin(number):
             print (number % 2) 
 
 DecToBin(12)
+
+#ispangram#
+import string
+
+def ispangram(str):
+	alphabets = "abcdefghijklmnopqrstuvwxyz"
+	for char in alphabets:
+		if char not in str.lower():
+			return False
+	return True
+
+string = 'The five boxing wizards jump quickly'
+if(ispangram(string) == True):
+	print("Yes it's a pangram")
+else:
+	print("No it's a pangram")
+              
