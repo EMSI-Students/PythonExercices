@@ -84,7 +84,7 @@ string = 'The five boxing wizards jump quickly'
 if(ispangram(string) == True):
 	print("Yes it's a pangram")
 else:
-	print("No it's a pangram")
+	print("No it's not a pangram")
           
    #datetime#	
 import datetime
