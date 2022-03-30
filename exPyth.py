@@ -152,3 +152,29 @@ def Password_valide(Password):
 
 print(Password_valide("JKAUKl0$Q"))
 
+
+
+#CONVERT A NUMBER TO A BASE#
+def DcToBase(x,Base):
+    L = []
+    while x!=0:
+        L.insert(0,x%Base)
+        x = x//Base
+    return L    
+
+def NumberBase(n,Base):
+    if(Base ==16):
+        L = DcToBase(n,Base)
+        return L
+    elif(Base == 2):
+        L = DcToBase(n,Base)
+        return L
+    elif(Base ==8):
+        L =  DcToBase(n,Base)   
+        return L
+    else:    
+        return 'Error'
+    
+print(NumberBase(5658,2))
+print(NumberBase(5658,8))
+print(NumberBase(5658,16))
