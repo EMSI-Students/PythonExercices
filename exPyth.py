@@ -1,21 +1,4 @@
-#Fonctions sur les listes des nombres#
 
-def listInt():
-    List = []
-    while True:
-     x = int(input())
-     if not x:
-            List1 = []
-     for i in range(len(List)):
-            List1.append(min(List))
-            List.remove(min(List))
-            return List1   
-     else:
-        List.append(x)
-
-newL = listInt()
-#print("insert values")
-print(newL) 
 
 # moyenne d'une collection de valeurs entrées#
 L = []
@@ -68,6 +51,25 @@ def DecToBin(number):
 
 DecToBin(12)
 
+#Fonctions sur les listes des nombres#
+
+def listInt():
+    List = []
+    while True:
+     x = int(input())
+     if not x:
+            List1 = []
+     for i in range(len(List)):
+            List1.append(min(List))
+            List.remove(min(List))
+            return List1   
+     else:
+        List.append(x)
+
+newL = listInt()
+#print("insert values")
+print(newL) 
+
 #ispangram#
 import string
 
@@ -83,4 +85,8 @@ if(ispangram(string) == True):
 	print("Yes it's a pangram")
 else:
 	print("No it's a pangram")
-              
+          
+   #datetime#	
+import datetime
+now = datetime.datetime.now()
+print(now.year, now.month, now.day)		
