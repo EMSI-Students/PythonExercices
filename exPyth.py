@@ -1,20 +1,19 @@
-
+#Fonctions sur les listes des nombres#
 def listInt():
     List = []
-while True:
-    x = int(input())
-if not x:
-    List2 = []
-for i in range(len(List)):
-    List2.append(min(List))
-    List.remove(min(List))
-return List2   
-else:
- List.append(x)
+    while True:
+     x = int(input())
+     if not x:
+            List1 = []
+     for i in range(len(List)):
+            List1.append(min(List))
+            List.remove(min(List))
+            return List1   
+     else:
+        List.append(x)
 
-NvList = FunctionInt()
-print(NvList) 
-
+newL = listInt()
+print(newL) 
 
 # moyenne d'une collection de valeurs entrées#
 L = []
