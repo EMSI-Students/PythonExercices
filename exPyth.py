@@ -117,4 +117,38 @@ else:
     print("\nerror!")
 
 
+import random
+
+def Rand_Password():
+    Length = random.randint(7,10)
+    s = ""
+    for i in range(Length+1):
+        j = random.randrange(33,126)
+        s += chr(j)
+    return s
+
+print(Rand_Password())   
+
+def GET_ALPHABET():
+    S = ""
+    for i in range(65,91):
+        S += chr(i)
+    return S
+
+
+def Password_valide(Password):
+    spech = "%#:$*"
+    lowrc = GET_ALPHABET()
+    uprc = GET_ALPHABET()
+    if len(Password) >= 8:
+        if lowrc in Password:
+            if uprc in Password:
+               if spech in Password:
+                   return True
+               else: return False 
+            else: return False
+        else: return False                           
+    else: return False
+
+print(Password_valide("JKAUKl0$Q"))
 
