@@ -89,4 +89,32 @@ else:
    #datetime#	
 import datetime
 now = datetime.datetime.now()
-print(now.year, now.month, now.day)		
+print(now.year, now.month, now.day)	
+
+
+#HEX2INT#
+hex = input("Enter Hexadecimal Number: ")
+ 
+c = count = i = 0
+len = len(hex) - 1
+while len>=0:
+    if hex[len]>='0' and hex[len]<='9':
+        x = int(hex[len])
+    elif hex[len]>='A' and hex[len]<='F':
+        x = ord(hex[len]) - 55
+    elif hex[len]>='a' and hex[len]<='f':
+        x = ord(hex[len]) - 87
+    else:
+        c = 1
+        break
+    count = count + (x * (16 ** i))
+    len = len - 1
+    i = i+1
+ 
+if c == 0:
+    print("\nDecimal Value = ", count)
+else:
+    print("\nerror!")
+
+
+
