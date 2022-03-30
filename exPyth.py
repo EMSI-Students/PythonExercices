@@ -1,4 +1,5 @@
 #Fonctions sur les listes des nombres#
+
 def listInt():
     List = []
     while True:
@@ -13,6 +14,7 @@ def listInt():
         List.append(x)
 
 newL = listInt()
+#print("insert values")
 print(newL) 
 
 # moyenne d'une collection de valeurs entrées#
