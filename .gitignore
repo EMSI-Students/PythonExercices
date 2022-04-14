@@ -1,4 +1,10 @@
 *.code-workspace
-/__pycache__
 /programs
 /others
+
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
