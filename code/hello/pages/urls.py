@@ -2,5 +2,5 @@ from django.urls import path
 from .views import firstPageView
 
 urlpatterns = [
-    path('', firstPageView, name='home'),
+    path('first/', firstPageView, name='first_page'),
 ]
