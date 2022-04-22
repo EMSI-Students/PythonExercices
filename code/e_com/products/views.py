@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 from .product import Product
 
 products = []
@@ -10,29 +10,15 @@ products.append(Product('Thinkpad X', 'Lenovo', 2018))
 products.append(Product('EliteBook', 'Hp', 2018))
 products.append(Product('Airpods Pro', 'Apple', 2020))
 
+
 def products_list(request):
-    msg = "<h1>Products</h1>"
-    msg += "<ul>"
-    for product in products:
-        msg += f"<li>{product.name} - {product.year} from {product.brand}</li>"
-    msg += "</ul>"
-    return HttpResponse(msg)
+    return render(request, "products/products_list.html", {'list_products': products})
+
 
 def products_year(request, year):
-    msg = "<h1>Products</h1>"
-    msg += "<ul>"
-    for product in products:
-        if product.year == year:
-            msg += f"<li>{product.name} - {product.year} from {product.brand}</li>"
-    msg += "</ul>"
-    return HttpResponse(msg)
+    return render(request, "products/products_list_year.html", {'list_products': products, 'year': year})
+
 
 def products_name(request, name):
     full_name = " ".join(name.split('_'))
-    msg = "<h1>Products</h1>"
-    msg += "<ul>"
-    for product in products:
-        if product.name.lower() == full_name.lower():
-            msg += f"<li>{product.name} - {product.year} from {product.brand}</li>"
-    msg += "</ul>"
-    return HttpResponse(msg)
+    return render(request, "products/products_list_name.html", {'list_products': products, 'name': full_name})

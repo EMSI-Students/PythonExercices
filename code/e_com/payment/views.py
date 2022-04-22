@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def payment(request):
-    return HttpResponse("<h1>This Page for Payment</h1>")
+    return render(request, "payment/welcome.html")
