@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Page Title{% endblock %}</title>
+</head>
+
+<body>
+    <a href="{% url 'users:user_hello' %}">Hello Page</a> -
+    <a href="{% url 'products:products_list' %}">Products List Page</a> -
+    <a href="{% url 'payment:payment' %}">Payment Page</a>
+    {% block content %}{% endblock %}
+    <p style="font-size: small; font-style: italic; color: red;">
+        *This website is for testing purpose
+    </p>
+</body>
+
+</html>

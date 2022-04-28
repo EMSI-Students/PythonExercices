@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}Products List Filtered By Name Page{% endblock %}
+{% block title %}Products List Filtered By Brand Page{% endblock %}
 {% block content %}
     <h1>Products</h1>
     <ul>
         {% for product in list_products %}
-            {% if product.name|lower == name|lower %}
+            {% if product.brand|lower == brand|lower %}
                 <li>{{product.name}} - {{product.year}} from {{product.brand}}</li>
             {% endif %}
         {% endfor %}

@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products List Filtered By Year Page</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Products List Filtered By Year Page{% endblock %}
+{% block content %}
     <h1>Products</h1>
     <ul>
         {% for product in list_products %}
@@ -15,5 +10,4 @@
             {% endif %}
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
