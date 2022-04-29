@@ -1,4 +1,4 @@
-Créer une [API RESTfull](https://www.redhat.com/fr/topics/api/what-is-a-rest-api) qui gère des ressources comme des produits, des utilisateurs ... en utilisant le framework Django pour le backend et HTML, CSS (et Javascript si nécessaire) ou bien un framework (bonus) comme Angular, React ... pour le frontend.
+Créer une [API RESTful](https://www.redhat.com/fr/topics/api/what-is-a-rest-api) qui gère des ressources comme des produits, des utilisateurs ... en utilisant le framework Django pour le backend et HTML, CSS (et Javascript si nécessaire) ou bien un framework (bonus) comme Angular, React ... pour le frontend.
 
 Votre API doit :
 - Utiliser le pattern MVT.
