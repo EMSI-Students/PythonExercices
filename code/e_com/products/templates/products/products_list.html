@@ -5,7 +5,7 @@
     <h1>Products</h1>
     <ul>
         {% for product in list_products %}
-            <li>{{product.name}} - {{product.year}} from {{product.brand}}</li>
+            <li>{{product.name|title}} - {{product.year}} from {{product.brand|title}}</li>
         {% endfor %}
     </ul>
 {% endblock %}
