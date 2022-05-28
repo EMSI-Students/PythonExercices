@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Product Info Page{% endblock %}
+{% block content %}
+    <h2>{{product.name|title}}</h2>
+    <ul>
+        <li>Brand : {{product.brand|title}}</li>
+        <li>Date of Production : {{product.date_production|date:'m/y'}}</li>
+    </ul>
+    <img src="{{product.image.url}}" alt="{{product.name|add:'-image'}}" width=170px height=150px>
+    <p>{{product.description}}</p>
+    <a href="{% url 'products:products_list' %}">Return</a>
+{% endblock %}

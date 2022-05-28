@@ -2,10 +2,11 @@
 
 {% block title %}Products List Page{% endblock %}
 {% block content %}
-    <h1>Products</h1>
-    <ul>
-        {% for product in list_products %}
-            <li>{{product.name|title}} - {{product.year}} from {{product.brand|title}}</li>
-        {% endfor %}
-    </ul>
+    <h1>Products :</h1>
+    {% for product in list_products %}
+        <h2>{{product.name|title}}</h2>
+        <img src="{{product.image.url}}" alt="{{product.name|add:'-image'}}" width=170px height=150px>
+        <p>{{product.description}}</p>
+        <a href="{% url 'products:product_info' product.id %}">More...</a>
+    {% endfor %}
 {% endblock %}

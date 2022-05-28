@@ -10,4 +10,5 @@ urlpatterns = [
     path('hello/', views.hello, name = 'user_hello'),
     path('hello/<str:user_name>/', views.hello, name = 'user_hello'),
     path('hello/<user_name>/<int:user_age>/', views.hello, name='user_age'),
+    path('<int:user_id>/', views.user_info, name = 'user_info'),
 ]

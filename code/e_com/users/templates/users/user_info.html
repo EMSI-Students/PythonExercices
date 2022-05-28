@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}User Info Page{% endblock %}
+{% block content %}
+    <h1>Hello {{user.first_name|title}} {{user.last_name|title}}, you purchased the following products :</h1>
+    {% for product in products %}
+        <h2>{{product.name|title}}</h2>
+        <img src="{{product.image.url}}" alt="{{product.name|add:'-image'}}" width=170px height=150px>
+    {% endfor %}
+{% endblock %}
